@@ -14,10 +14,15 @@ export default defineConfig({
 		tailwindcss(),
 		tanstackStart(),
 		nitro({
+			preset: "vercel",
 			vercel: {
 				functions: {
 					runtime: "bun1.x",
 				},
+			},
+			output: {
+				dir: ".vercel/output",
+				publicDir: ".vercel/output/static",
 			},
 		}),
 		viteReact(),

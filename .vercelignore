@@ -8,11 +8,13 @@ dist
 .turbo
 **/bin
 **/dist
-**/output
 **/out
 **/.next
 **/.turbo
-**/.vercel
+# Keep .vercel/output for Vercel Build Output API
+!.vercel/output
+!apps/web/.output
+!apps/web/.vercel
 
 # Development
 .git

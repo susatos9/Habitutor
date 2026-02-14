@@ -18,7 +18,7 @@
 			"dest": "/apps/web/.output/server/index.mjs"
 		}
 	],
-	"buildCommand": "bun install && bun build:packages && cd apps/web && bun build",
+	"buildCommand": "bun install && bunx turbo build --filter=@habitutor/api --filter=@habitutor/db --filter=@habitutor/auth && bunx turbo build --filter=web",
 	"outputDirectory": "apps/web/.output/public",
 	"installCommand": "bun install",
 	"framework": null

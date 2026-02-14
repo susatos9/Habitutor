@@ -1,4 +1,4 @@
-import { PREMIUM_DEADLINE } from "@habitutor/api/lib/constants";
+import { PREMIUM_DEADLINE } from "@habitutor/api";
 import { InfinityIcon, SparkleIcon, SpinnerIcon, StarIcon } from "@phosphor-icons/react";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { createFileRoute } from "@tanstack/react-router";

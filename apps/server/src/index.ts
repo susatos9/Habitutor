@@ -1,5 +1,4 @@
-import { createContext } from "@habitutor/api/context";
-import { appRouter } from "@habitutor/api/routers/index";
+import { appRouter, createContext } from "@habitutor/api";
 import { auth } from "@habitutor/auth";
 import { experimental_ArkTypeToJsonSchemaConverter as ArkTypeToJsonSchemaConverter } from "@orpc/arktype";
 import { OpenAPIHandler } from "@orpc/openapi/fetch";

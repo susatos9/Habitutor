@@ -1,4 +1,4 @@
-import type { appRouter } from "@habitutor/api/routers/index";
+import type { appRouter } from "@habitutor/api";
 import { createORPCClient, type InferClientBodyOutputs, isDefinedError } from "@orpc/client";
 import { RPCLink } from "@orpc/client/fetch";
 import { StandardRPCJsonSerializer } from "@orpc/client/standard";

@@ -61,3 +61,12 @@ export const authed = pub.use(requireAuth);
 export const premium = authed.use(requirePremium);
 export const admin = authed.use(requireAdmin);
 export const authedRateLimited = authed.use(rateLimit);
+
+// Re-export constants for easier imports
+export { PREMIUM_DEADLINE } from "./lib/constants";
+
+// Re-export router types and instance
+export { appRouter, type AppRouter, type AppRouterClient } from "./routers/index";
+
+// Re-export context utilities
+export { createContext, type Context, type CreateContextOptions } from "./context";

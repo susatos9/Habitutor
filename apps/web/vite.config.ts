@@ -22,4 +22,10 @@ export default defineConfig({
 		}),
 		viteReact(),
 	],
+	ssr: {
+		noExternal: ["@habitutor/api", "@habitutor/auth", "@habitutor/db"],
+	},
+	optimizeDeps: {
+		include: ["@habitutor/api", "@habitutor/auth", "@habitutor/db"],
+	},
 });

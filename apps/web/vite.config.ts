@@ -21,8 +21,8 @@ export default defineConfig({
 				},
 			},
 			output: {
-				dir: ".vercel/output",
-				publicDir: ".vercel/output/static",
+				dir: "../../.vercel/output",
+				publicDir: "../../.vercel/output/static",
 			},
 		}),
 		viteReact(),

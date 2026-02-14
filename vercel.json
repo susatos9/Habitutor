@@ -1,0 +1,25 @@
+{
+	"version": 2,
+	"builds": [
+		{
+			"src": "apps/web/package.json",
+			"use": "@vercel/static-build",
+			"config": {
+				"distDir": "apps/web/.output/public"
+			}
+		}
+	],
+	"routes": [
+		{
+			"handle": "filesystem"
+		},
+		{
+			"src": "/(.*)",
+			"dest": "/apps/web/.output/server/index.mjs"
+		}
+	],
+	"buildCommand": "bun install && bun build:packages && cd apps/web && bun build",
+	"outputDirectory": "apps/web/.output/public",
+	"installCommand": "bun install",
+	"framework": null
+}
